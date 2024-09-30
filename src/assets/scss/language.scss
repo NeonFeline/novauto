@@ -1,0 +1,74 @@
+.language_selection {
+  display: none;
+}
+
+.custom-select {
+  position: relative;
+  width: 200px;
+}
+
+.select-selected {
+  background-color: $secondary_color;
+  color: $main_color;
+  padding: 10px;
+  cursor: pointer;
+  // border: 1px solid darken($main_color, 10%);
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($secondary_color, 10%);
+  }
+}
+
+.select-items {
+  position: absolute;
+  background-color: $main_color;
+  width: 100%;
+  z-index: 99;
+  display: none;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid darken($main_color, 10%);
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+}
+
+.select-items div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-items div:hover {
+  background-color: darken($main_color, 10%);
+}
+
+/* Custom styles */
+.custom-select .select-selected {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.custom-select .select-items {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.custom-select .select-items div {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.custom-select .select-items div:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.language_box {
+  position: relative;
+  width: 12rem;
+}
+
+.language_section {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}

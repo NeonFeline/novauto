@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+$main_color: #fff;
+$secondary_color: #333;
+
+@import "language";
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 3.2rem;
+}
+
+.audio {
+  font-size: 1.6rem;
+  &_samples {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &_sample {
+    font-size: 2.4rem;
+  }
+}
